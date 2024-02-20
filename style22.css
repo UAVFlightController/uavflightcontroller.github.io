@@ -11,7 +11,6 @@ body {
     overflow: auto;
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -43,8 +42,8 @@ body {
 }
 
 .logo{
-    width: 122px;
-    height:96px;
+    width: 44px;
+    height: 32px;
     background-image: url(teste.jpg);
     background-size: contain;
 }
@@ -71,7 +70,7 @@ body {
 
 .navbar-menu a{
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 30px;
     transition: .2s linear;
@@ -222,6 +221,75 @@ body {
     }
 }
 
+.header{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #000;
+}
 
 .hero-btn{
     display: inline-block;
@@ -241,9 +309,42 @@ body {
     transition: 1s;
 }
 
+nav .fa{
+    display: none;
+}
 
-/*------teste----------*/
-.teste{
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;  
+    }
+}
+
+/*------home2----------*/
+.home2{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -256,10 +357,6 @@ h1{
     color: rgb(10, 10, 10);
 }
 
-h2 {
-    color: rgb(4, 4, 4); /* Change the color of the Welcomes */
-}
-
 p{
     color: #36454F;
     font-size: 14px;
@@ -270,14 +367,12 @@ p{
 
 /*para as col ficarem lado a lado e não corrido*/
 .row{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 400px;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 /*texto da row devia ficar dentro de retangulos da cor indicada em baixo*/
-.teste-col{
+.home-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -288,14 +383,179 @@ p{
 }
 
 h2 {
-    color: rgb(4, 4, 4);
+    color: rgb(4, 4, 4); /* Change the color of the Welcomes */
 }
+
 
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
     color: rgb(8, 8, 8);
+}
+
+/*quando se mete o corsor no retangulo da couse-col deveria aparecer tipo sombra a volta*/
+.home-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*para ficarem corridos em ecras mais pequenos*/
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*-----footer-----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.footer p{
+    color: white;
+}
+
+/*about the project page*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.about-project{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.comment-section{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-section h3{
+    text-align: left;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+@media(max-width:700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
+
+.team{
+    margin-top: -200px;
+}
+
+.row-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-team{
+    width: 450px;
+    padding: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.members-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+}
+
+.about-team h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.about-team h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.about-team p{
+    text-align: justify;
+}
+
+.ul{
+    margin: 0;
+    padding: 0;
+}
+
+.about-team li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.about-team li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all ease-in-out 250ms;
+}
+
+.about-team li a:hover{
+    color: #b9b9b9;
 }
 
 form {
@@ -310,10 +570,44 @@ label {
     color: white;
 }
 
-.forms{
-    margin-top: 400px;
+input, textarea {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: black;
 }
 
-.duckie{
-    margin-top: 1000px;
+input[type="submit"] {
+    background-color: #dfeaf2;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    background-color: #dfeaf2;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+table{
+    width:90%;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+th, td{
+    background-color: #dfeaf2;
+    padding: 15px;
+}
+
+table, th, td{
+  border:1px solid black;
+  border-collapse: collapse;
 }

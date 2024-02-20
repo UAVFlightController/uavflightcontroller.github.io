@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Professors</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-----------<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&displayswap">-------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Professors</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-----------<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&displayswap">-------------->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
  
-<body>
-    <h2>About The Professors</h2>
-    <section class="sub-header">
-        <nav>
-            <a href="home.html"><img src="ist.png" margin-left="0px"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="signIn.html">SIGN IN</a></li>
-                    <li><a href="register.html">CREATE ACCOUNT</a></li>
-                    <li><a href="">CONTACTS</a></li>
-                    <li><a href="more.html">MORE</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <h1>Meet The Professors Involved</h1>
-    </section>
-
-    <!----------About the project----------->
-    <section>
-        <div class="about-project">
-            <div class="row">
-                <div class="about-col">
-                    <h1>About the UAV flight controller</h1>
-                    <p>A low-cost, versatile, autonomous Unmanned Aerial Vehicle flight
-                        controller is an electronic system, comprised of hardware and software,
-                        able to fully control any type of small fixed-wing aircraft often known as
-                        radio-controlled model airplanes.</p>
-                    <p>Given the high availability and low cost of these fixed-wing aircraft, by
-                        developing a matching low-cost flight controller system, it could be
-                        possible to deploy various UAVs at a time to actively monitor high-risk
-                        areas autonomously, relaying critical information to firefighters while
-                        having few manned interventions in the surveillance process.</p>
+    <body>
+        <h2>About The Professors</h2>
+        <section class="sub-header">
+            <nav>
+                <a href="home.html"><img src="ist.png" margin-left="0px"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="signIn.html">SIGN IN</a></li>
+                        <li><a href="register.html">CREATE ACCOUNT</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                        <li><a href="more.html">MORE</a></li>
+                    </ul>
                 </div>
-                <div class="about-col">
-                    <img src="teste.jpg">
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Meet The Professors Involved</h1>
+        </section>
+
+        <!----------About the project----------->
+        <section>
+            <div class="about-project">
+                <div class="row">
+                    <div class="about-col">
+                        <h1>About the UAV flight controller</h1>
+                        <p>A low-cost, versatile, autonomous Unmanned Aerial Vehicle flight
+                            controller is an electronic system, comprised of hardware and software,
+                            able to fully control any type of small fixed-wing aircraft often known as
+                            radio-controlled model airplanes.</p>
+                        <p>Given the high availability and low cost of these fixed-wing aircraft, by
+                            developing a matching low-cost flight controller system, it could be
+                            possible to deploy various UAVs at a time to actively monitor high-risk
+                            areas autonomously, relaying critical information to firefighters while
+                            having few manned interventions in the surveillance process.</p>
+                    </div>
+                    <div class="about-col">
+                        <img src="teste.jpg">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-----JavaSCript for Toggle Menu------->
-    <script>
+    <!-----JavaSCript for Toggle Menu------->
+        <script>
 
-        var navLinks = document.getElementById("navLinks");
+            var navLinks = document.getElementById("navLinks");
 
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
 
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
 
-    </script>
+        </script>
 
 
-    <!--------Footer---------->
-    <section class="footer">
-        <h4>socials</h4>
-        <p>Keep track of our progress and news through our socials</p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
-        </div>
-    </section>
- 
+        <!--------Footer---------->
+        <section class="footer">
+            <h4>socials</h4>
+            <p>Keep track of our progress and news through our socials</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </section>
+    
 
-</body>
+    </body>
 </html>

@@ -3,13 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
-        <title>Sign In</title>
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
  
     <body>
-        <h2>Access Your Account</h2>
+        <h2>About us</h2>
         <section class="header">
             <nav>
                 <a href="home.html"><img src="ist.png" margin-left="0px"></a>
@@ -25,24 +26,44 @@
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-
-            <form action="signingIN.cgi.cgi" method="post">
-                <p>
-                    <label>Username: <input type="text" name="cust_name" /></label>
-                </p>
-                <p>
-                    <label>Password: <input type="text" name="cust_password" /></label>
-                </p>
-                <p>
-                    <button type="submit">Submit</button>
-                    <input type="reset" value="Reset">
-                </p>        
-            </form>
-        
+            <div class="text-box">
+                <h1>
+                <br>
+                <br>    
+                Teste
+                <br>
+                teste2 </h1>
+                <p>blah blah</p>
+                
+            </div>
         </section>
 
 
-    <!-----JavaSCript for Toggle Menu------->
+        <!--------Home---------->
+        <section class="home">
+            <p>i'm just testing this</p>
+            <div class="row">
+                <div class="home-col">
+                    <h3>Project</h3>
+                    <p>Know our project</p>
+                    <a href="project.html" class="hero-btn">Click to know more</a>
+                </div>
+                <div class="home-col">
+                    <h3>Team</h3>
+                    <p>Check the members of the team involved in this project</p>
+                    <a href="team.html" class="hero-btn">Click to know more</a>
+                </div>
+                <div class="home-col">
+                    <h3>Professors</h3>
+                    <p>Check the professors involved in this project</p>
+                    <a href="professors.html" class="hero-btn">Click to know more</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-----JavaSCript for Toggle Menu------->
         <script>
 
             var navLinks = document.getElementById("navLinks");
